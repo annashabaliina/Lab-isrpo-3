@@ -1,0 +1,30 @@
+
+{
+    "name": "Important-line",
+    "displayName": "Important line",
+    "description": "Important line",
+    "version": "0.0.1",
+    "publisher": "Anna",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "extension.addComment",
+          "title": "Add Comment"
+        }
+      ],
+      "keybindings": [
+      {
+        "command": "extension.addComment",
+        "key": "Shift+3",
+        "when": "editorIsOpen"
+      }
+    ]
+    }
+  }
